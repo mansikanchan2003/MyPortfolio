@@ -1,0 +1,212 @@
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #121212;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;   /* stays on top */
+  top: 0;
+  background-color: #111;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #4f46e5;
+}
+a {
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #00f7ff;
+}
+
+/* Sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in-out;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.section-title {
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4f46e5;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Galaxy Container */
+#galaxy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* behind content */
+  background: transparent;
+}
+
+/* Galaxy Canvas */
+#galaxy canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #b90404, #cf601f);
+  color: white;
+}
+
+/* Scrollbar for project description */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  border-radius: 3px;
+}
+
+/* Shiny Text Animation */
+.shiny-text {
+  background: linear-gradient(
+    120deg,
+    rgba(99, 172, 249, 1) 40%,
+    rgba(91, 78, 241, 1) 50%,
+    rgba(73, 198, 252, 1) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+.shiny-text.disabled {
+  animation: none;
+}
+@keyframes shine {
+  0% { background-position: 100%; }
+  100% { background-position: -100%; }
+}
+
+/* Electric Card */
+.electric-card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: #111;
+  color: white;
+  border: 2px solid transparent;
+  z-index: 0;
+  overflow: hidden;
+}
+.electric-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(270deg, #5227ff, #00f7ff, #5227ff, #00f7ff, #5227ff);
+  background-size: 600% 600%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  filter: blur(8px);
+  z-index: -1;
+  animation: electric-flow 4s linear infinite;
+}
+/* Give illusion that image is "in front of" the card */
+#projects-container > div {
+  position: relative;
+}
+
+#projects-container img {
+  margin-top: -40px; /* Pull image upward */
+}
+
+@keyframes electric-flow {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 0%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 100%; }
+  100% { background-position: 0% 50%; }
+}
+/* Project Images */
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#skills-container span:hover{
+  background: linear-gradient(135deg, #b90404, #cf601f);
+  color: white;
+}

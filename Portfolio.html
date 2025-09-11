@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mansi Kanchan - Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="Portfolio.css" />
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-gray-900 via-black to-gray-800"
+    >
+      <div id="galaxy"></div>
+      <div class="hero-content">
+        <h1
+          class="text-5xl md:text-7xl font-extrabold animate__animated animate__fadeInDown shiny-text"
+          style="animation-duration: 3s"
+        >
+          Mansi Kanchan
+        </h1>
+        <p
+          class="mt-4 text-lg md:text-2xl text-gray-300 animate__animated animate__fadeInUp"
+        >
+          Full Stack Developer | Problem Solver | Innovator
+        </p>
+        <div class="mt-6 flex space-x-4">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-primary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-5 py-10 max-w-5xl">
+      <!-- About Section -->
+      <section id="about" class="mb-16">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Aspiring software engineer and computer science student with strong
+          skills in Java, React, and OOP. Passionate about writing clean,
+          maintainable code and eager to contribute through real-world
+          problem-solving in a collaborative team environment. Currently
+          pursuing B.Tech in Computer Science & Engineering at Invertis
+          University, expected 2026.
+        </p>
+
+        <a href="#contact" id="hire"
+     class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl shadow-lg 
+          hover:bg-indigo-500 hover:shadow-indigo-400/50 hover:shadow-xl 
+          transition duration-300">
+     Hire Me
+  </a>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="mb-16">
+        <h2 class="section-title">Projects</h2>
+        <div id="projects-container" class="space-y-16">
+          <!-- Projects will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="mb-16">
+        <h2 class="section-title">Skills</h2>
+        <div id="skills-container" class="flex flex-wrap gap-4">
+          <!-- Skills will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <!-- Training -->
+       <section id="experience" class="mb-16">
+  <h2 class="section-title">Trainings</h2>
+
+  <div class="space-y-6">
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <h3 class="text-xl font-semibold text-indigo-400">Android Development Training</h3>
+      <p class="text-gray-400">Techpile Technology Pvt. Ltd. | 2023</p>
+      <p class="text-gray-300 mt-2">
+        Completed hands-on training in Android app development, covering Java, Firebase integration, and real-time chat app creation.
+      </p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <h3 class="text-xl font-semibold text-indigo-400">C Programming Training</h3>
+      <p class="text-gray-400">Softpro India | 2022</p>
+      <p class="text-gray-300 mt-2">
+        Gained a strong foundation in programming concepts, algorithms, and problem-solving using C language.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+ <section id="experience" class="mb-16">
+  <h2 class="section-title">Experience / Internship</h2>
+
+  <div class="space-y-6">
+    <!-- Internship -->
+    <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+      <h3 class="text-xl font-semibold text-indigo-400">
+        Java Full Stack Developer Intern
+      </h3>
+      <p class="text-gray-400">AICTE – Virtual Internship (Supported by EDUSKILLS Academy) | Remote, India</p>
+      <p class="text-gray-400 italic">April 2025 – June 2025 (10 Weeks)</p>
+      <p class="text-gray-300 mt-3">
+        Completed a 10-week virtual internship focused on full stack development, covering both 
+        <strong>front-end (HTML, CSS, JavaScript)</strong> and <strong>back-end (Java, JDBC, Servlets)</strong>. 
+        Strengthened end-to-end workflows, including UI design, backend logic, and database connectivity.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Education Section -->
+      <section id="education" class="mb-16">
+        <h2 class="section-title">Education</h2>
+
+        <!-- Container for horizontal cards -->
+        <div
+          class="tilted-card-container"
+          style="
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+          "
+        >
+          <div class="tilted-card-figure" style="width: 300px; height: 180px">
+            <div class="tilted-card-inner" style="height: 100%">
+              <div class="tilted-card-content">
+                <h3 class="text-xl font-semibold text-indigo-500">
+                  B.Tech in Computer Science & Engineering
+                </h3>
+                <p>
+                  Invertis University, Bareilly, India (2023 - 2026 expected)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tilted-card-figure" style="width: 300px; height: 180px">
+            <div class="tilted-card-inner" style="height: 100%">
+              <div class="tilted-card-content">
+                <h3 class="text-xl font-semibold text-indigo-500">
+                  Diploma in Computer Science & Engineering
+                </h3>
+                <p>
+                  Government Polytechnic, Shahjahanpur, Uttar Pradesh (2023)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tilted-card-figure" style="width: 300px; height: 180px">
+            <div class="tilted-card-inner" style="height: 100%">
+              <div class="tilted-card-content">
+                <h3 class="text-xl font-semibold text-indigo-500">
+                  Intermediate (PCM)
+                </h3>
+                <p>
+                  St. Pauls Inter College, Shahjahanpur, Uttar Pradesh (2020)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tilted-card-figure" style="width: 300px; height: 180px">
+            <div class="tilted-card-inner" style="height: 100%">
+              <div class="tilted-card-content">
+                <h3 class="text-xl font-semibold text-indigo-500">
+                  High School
+                </h3>
+                <p>Cambridge Public School, Tilhar, Uttar Pradesh (2018)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="mb-16">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="mb-8 max-w-3xl">
+          Feel free to reach out for collaborations, internships, or just to say
+          hi!
+        </p>
+
+        <div class="flex justify-center gap-6 flex-wrap">
+          <!-- Email -->
+          <a
+            href="mailto:kanchan.mansi2003@gmail.com"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-red-500"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13l8-8.99V4H4z"
+              />
+            </svg>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+919120658865" class="contact-card">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 011 1v3.54a1 1 0 01-.91 1c-9.39.72-17.21-7.1-16.49-16.49a1 1 0 011-.91h3.54a1 1 0 011 1c0 1.21.2 2.42.57 3.54a1 1 0 01-.24 1.05l-2.2 2.2z"
+              />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/mansi-kanchan-7924b0196"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-blue-500"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 
+                 2.239 5 5 5h14c2.762 0 5-2.239 
+                 5-5v-14c0-2.761-2.238-5-5-5zm-11 
+                 19h-3v-10h3v10zm-1.5-11.268c-.966 
+                 0-1.75-.784-1.75-1.75s.784-1.75 
+                 1.75-1.75 1.75.784 
+                 1.75 1.75-.784 1.75-1.75 
+                 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.062-1.865-3.062-1.865 
+                 0-2.151 1.454-2.151 
+                 2.959v5.707h-3v-10h2.885v1.367h.041c.402-.762 
+                 1.383-1.565 2.849-1.565 3.045 0 
+                 3.609 2.005 3.609 4.614v5.584z"
+              />
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/mansikanchan2003"
+            target="_blank"
+            rel="noopener"
+            class="contact-card"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 
+                 12 0 5.303 3.438 9.8 8.205 
+                 11.385.6.11.82-.26.82-.577 
+                 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73 
+                 1.205.085 1.84 1.237 1.84 
+                 1.237 1.07 1.835 2.807 
+                 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.93 
+                 0-1.31.47-2.38 1.235-3.22-.125-.303-.535-1.523.115-3.176 
+                 0 0 1.005-.322 3.3 
+                 1.23a11.5 11.5 0 013.003-.404c1.02.005 
+                 2.045.138 3.003.404 2.28-1.552 
+                 3.285-1.23 3.285-1.23.655 1.653.245 
+                 2.873.12 3.176.77.84 1.23 
+                 1.91 1.23 3.22 0 4.61-2.805 
+                 5.625-5.475 5.92.43.37.81 1.1.81 
+                 2.22 0 1.606-.015 2.896-.015 
+                 3.286 0 .32.21.69.825.57C20.565 
+                 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="Portfolio.js"></script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script type="module">
+      document.addEventListener("DOMContentLoaded", () => {
+        import("./galaxy.js").then((mod) => {
+          const container = document.getElementById("galaxy");
+          mod.initGalaxy(container);
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="TiltedCard.css" />
+    <script src="TiltedCard.js"></script>
+  </body>
+</html>
