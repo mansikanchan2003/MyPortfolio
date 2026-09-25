@@ -42,9 +42,13 @@ A **quiz platform** with authentication, quiz creation, leaderboards, and certif
 
 ## 🧑‍💼 Experience
 
-### AI Automation Intern — Eko (On-site, Gurugram, Haryana, India)
+### 1. AI Automation Intern — Eko (On-site, Gurugram, Haryana, India)
 *Sept 2026 – Present*  
 Working on **AI-powered automation workflows**, focusing on autonomous business process automation, Google Maps lead generation, browser automation, Prompt Engineering, MCP, Selenium, and Playwright. Developing automation solutions for business lead discovery, data extraction, validation, and WhatsApp-based outreach campaigns with personalized messaging and lead-form integration.
+
+### 2. Java Full Stack Developer Intern — AICTE Virtual Internship (Supported by EDUSKILLS Academy, Remote, India)
+*April 2025 – June 2025 (10 Weeks)*  
+Completed a 10-week virtual internship focused on full stack development, covering both **front-end (HTML, CSS, JavaScript)** and **back-end (Java, JDBC, Servlets)**. Strengthened end-to-end workflows, including UI design, backend logic, and database connectivity.
 
 ---
 
