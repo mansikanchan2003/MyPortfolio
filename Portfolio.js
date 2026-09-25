@@ -46,7 +46,29 @@ const projects = [
     img: "BuzzChat.png",
     tech: ["Java", "Android Studio", "Firebase"],
     link: "https://github.com/mansikanchan2003/BuzzChat2"
-  }
+  },
+  {
+  name: "TalentPluse AI - Resume & JD Matcher",
+
+  description: "TalentPluse AI is an AI-powered resume and job description matching platform built with Python, FastAPI, and Google Gemini. It analyzes resumes against job descriptions, identifies matching skills and skill gaps, suggests improvements, generates interview questions, and provides evidence-based screening insights through a clean and user-friendly interface.",
+
+  img: "1-Analyze_workplace.png",
+
+  tech: ["Python", "FastAPI", "Google Gemini", "AI", "Prompt Engineering", "React", "Vite"],
+
+  link: "https://github.com/mansikanchan2003/AI-Resume-Matcher"
+},
+{
+  name: "AutoGMap - Autonomous Data Discovery & Orchestration Platform",
+
+  description: "AutoGMap is an autonomous lead generation and outreach platform built with Python, FastAPI, and Playwright. It discovers businesses from Google Maps using category and pincode inputs, extracts and validates contact details, removes duplicates, and supports automated WhatsApp campaigns with personalized messages, media, and lead forms.",
+
+  img: "AutoGMap.png",
+
+  tech: ["Python", "FastAPI", "Playwright", "Google Maps", "WhatsApp Automation", "AI", "React", "Vite"],
+
+  link: "https://github.com/mansikanchan2003/G-Map_Data_Scraper_2.0"
+}
 ];
 
 // Data for skills
