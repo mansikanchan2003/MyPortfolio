@@ -3,7 +3,7 @@
 Welcome to my **personal portfolio website**!  
 This project showcases my **skills, projects, and experiences** as a Computer Science & Engineering student passionate about **Full Stack Development, Android Development, and AI-powered applications**.  
 
-🔗 **Live Website:** [View Portfolio](https://mansikanchan2003.github.io/MyPortfolio/)
+🔗 **Live Website:** [View Portfolio]([https://mansikanchan2003.github.io/MyPortfolio/](https://mansi-portfolio-jd1f.onrender.com/))
 
 ---
 
