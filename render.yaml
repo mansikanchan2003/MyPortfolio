@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mansi-portfolio
+    runtime: static
+    staticPublishPath: .
+    buildCommand: ""
+    pullRequestPreviewsEnabled: false
